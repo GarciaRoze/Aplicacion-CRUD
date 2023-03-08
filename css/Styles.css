@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
+html{
+    min-height: 100%;
+    position: relative;
+}
+
 body {
+    margin: 0;
+    margin-bottom: 40px;
     background-color: rgba(100, 180, 185, 0.719);
 }
 
@@ -78,6 +85,7 @@ body {
     align-items: center;
     border-radius: 10px;
     box-shadow: 10px 10px rgba(12, 12, 12, 0.719);
+    margin-block-end: 80px;
     
 }
 
@@ -126,36 +134,22 @@ hr{
     background-color: red;
 }
 
-/* footer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: justify;
-    background-color: black;
-    height: auto;
-    width: 100%;
-}
-
-footer p{
-    color: aliceblue;
-    padding-top: 20px;
-    font-size: 1em;
-} */
 
 footer{
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: justify;
-    background-color: black;
-    height: auto;
+    background-color: rgba(17, 41, 66, 0.89);
     width: 100%;
-    margin-top: 40px;
     position: absolute;
+    bottom: 0;
+    height: 40px;
 
 }
 
 footer p{
+    text-align: center;
     width: 100%;
     color: aliceblue;
     padding-top: 10px;
@@ -240,6 +234,7 @@ footer p{
         margin: auto;
         border-radius: 10px;
         box-shadow: 5px 5px rgba(12, 12, 12, 0.719);
+        margin-block-end: 60px;
     }
     
     
@@ -294,10 +289,12 @@ footer{
     justify-content: center;
     align-content: center;
     text-align: justify;
-    background-color: black;
-    height: auto;
+    background-color: rgba(17, 41, 66, 0.89);
     width: 100%;
-    margin-top: 40px;
+    margin-top: 60px;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
 
 }
 
