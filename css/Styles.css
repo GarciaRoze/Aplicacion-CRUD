@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(100, 180, 185, 0.719);
+}
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1{
+    font-weight: 300;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.container .formulario{
+    width: 40%;
+    height: 300px;
+    margin: 15px 15px;
+    background-color: rgba(52, 65, 65, 0.438);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(12, 12, 12, 0.719);
+}
+
+.container .formulario h2{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.container .formulario form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .formulario form input,
+.container .formulario form button {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.container .formulario form button{
+    background: rgba(0, 0, 255, 0.411);
+}
+
+
+.container .listado{
+    width: 50%;
+    height: fit-content;
+    margin: 15px 15px auto;
+    background-color:rgba(52, 65, 65, 0.438);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(12, 12, 12, 0.719);
+    
+}
+
+
+.container .listado h2{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.container .listado .alumnos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.container .listado .alumnos p{
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: none;
+    margin: 0 5px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn-editar{
+    background-color: green;
+}
+
+.btn-eliminar{
+    background-color: red;
+}
+
+/* footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+footer p{
+    color: aliceblue;
+    padding-top: 20px;
+    font-size: 1em;
+} */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+    position: absolute;
+
+}
+
+footer p{
+    width: 100%;
+    color: aliceblue;
+    padding-top: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:500px){
+    .titulo{
+        font-size: 0.8em;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo h1{
+        font-weight: 300;
+    }
+    .container{
+        width: 100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container .formulario{
+        width: 350px;
+        height: 200px;
+        background-color: rgba(52, 65, 65, 0.438);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-block-end: 35px;
+        border-radius: 10px;
+        box-shadow: 5px 5px rgba(12, 12, 12, 0.719);
+    }
+    
+    .container .formulario h2{
+        margin-top: 10px;
+        font-weight: 150;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+    
+    .container .formulario form{
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .container .formulario form input,
+    .container .formulario form button {
+        width: 100%;
+        padding: 5px 5px;
+        margin: 5px 5px;
+        border-radius: 5px;
+        font-size: 0.6em;
+    }
+    
+    .container .formulario form button{
+        background: rgba(0, 0, 255, 0.411);
+    }
+    
+    
+    .container .listado{
+        width: 350px;
+        height: 100%;
+        background-color: rgba(52, 65, 65, 0.438);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px rgba(12, 12, 12, 0.719);
+    }
+    
+    
+    .container .listado h2{
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+    
+    .container .listado .alumnos{
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        padding: 0 5px;
+    }
+    
+    .container .listado .alumnos p{
+        margin: 5px 0;
+        font-size: 0.7em;
+        color: #ddd;
+    }
+    
+    hr{
+        width: 100%;
+        height: 1px;
+    }
+    
+    .btn{
+        padding: 4px 5px;
+        border: none;
+        margin: 0 5px;
+        color: white;
+        font-size: 0.8em;
+        border-radius: 20px;
+    }
+    
+    .btn-editar{
+        background-color: green;
+    }
+    
+    .btn-eliminar{
+        background-color: red;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+footer p{
+    width: 100%;
+    color: aliceblue;
+    padding-top: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
